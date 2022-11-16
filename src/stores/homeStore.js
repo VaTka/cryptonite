@@ -36,7 +36,6 @@ const homeStore = create((set) => ({
         ])
 
         const btcPrice = btcRes.data.bitcoin.usd;
-        console.log(btcPrice)
 
         const coins = res.data.coins.map((coin) => {
             return {
@@ -47,7 +46,6 @@ const homeStore = create((set) => ({
                 priceUsd: (coin.item.price_btc * btcPrice).toFixed(6),
             }
         })
-        console.log(coins)
         set({coins, trending: coins})
     }
 }))
