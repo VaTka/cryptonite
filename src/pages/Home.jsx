@@ -1,6 +1,5 @@
 import React from "react";
 import homeStore from "../stores/homeStore";
-import {Link} from "react-router-dom";
 import Header from "../components/Header";
 import ListItem from "../components/ListItem";
 import classNames from "classnames";
